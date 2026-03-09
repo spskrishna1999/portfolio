@@ -19761,3 +19761,63 @@ body.white-version .rn-btn-ulderline {
   transform: translateY(-5px);
   color: #ff014f;
 }
+
+.counter-card{
+background:linear-gradient(to right bottom, #212428, #16181c);
+padding:30px;
+border-radius:10px;
+transition:0.3s;
+box-shadow: var(--shadow-1);
+}
+
+.counter-card h3{
+font-size:40px;
+font-weight:700;
+color:#ffffff;
+}
+
+.counter-card p{
+margin-top:10px;
+font-size:16px;
+}
+
+.counter-card:hover{
+transform:translateY(-5px);
+}
+
+ 
+.counter-icon{
+margin-bottom:15px;
+}
+
+.counter-icon i{
+width:35px;
+height:35px;
+color:#ffffff;
+}
+ 
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+left:25px;
+background:#25D366;
+color:white;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+z-index:1000;
+}
+
+.whatsapp-float i{
+width:28px;
+height:28px;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+transition:0.3s;
+}
