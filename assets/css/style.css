@@ -15441,6 +15441,7 @@ div#featured-project-carousel {
   border-radius: 10px;
   position: relative;
   z-index: 2;
+  padding: 20px 10px;
 }
 .client-card .main-content .inner::after {
   content: "";
@@ -19753,6 +19754,7 @@ body.white-version .rn-btn-ulderline {
 
 .social-icone a {
   transition: all 0.3s ease;
+  margin: 0 15px;
 }
 
 .social-icone a:hover {

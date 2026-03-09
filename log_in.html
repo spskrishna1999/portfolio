@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:url('https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+}
+
+/* Overlay */
+body::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,#ff7a18cc,#ff3c00cc);
+}
+
+/* MAIN WRAPPER */
+.wrapper{
+  width:1100px;
+  height:600px;
+  border-radius:30px;
+  overflow:hidden;
+  display:flex;
+  position:relative;
+  z-index:2;
+  box-shadow:0 40px 80px rgba(0,0,0,0.4);
+}
+
+/* LEFT SIDE */
+.left{
+  width:50%;
+  padding:40px;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:rgb(51 51 51 / 61%);
+  backdrop-filter:blur(10px);
+  text-align: center;
+}
+
+.left h1{
+  font-size:36px;
+  margin-bottom:20px;
+}
+
+.left p{
+  text-align: justify;
+  line-height:1.6;
+}
+
+/* RIGHT SIDE */
+.right{
+  width:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(25px);
+}
+
+/* GLASS CARD */
+.form-box{
+  width:70%;
+  padding:45px;
+  border-radius: 15px;
+  background:rgb(51 51 51 / 61%);
+  backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,0.3);
+  box-shadow:0 20px 50px rgba(0,0,0,0.25);
+  text-align:center;
+  color:#fff;
+}
+
+.form-box h2{
+  margin-bottom:25px;
+}
+
+.input-group{
+  margin-bottom:20px;
+}
+
+.input-group input{
+  width:100%;
+  padding:12px;
+  border-radius:30px;
+  border:1px solid rgba(255,255,255,0.4);
+  background:rgba(255,255,255,0.2);
+  color:#fff;
+  outline:none;
+}
+
+.input-group input::placeholder{
+  color:#eee;
+}
+
+.btn{
+  width:100%;
+  padding:12px;
+  border-radius:30px;
+  border:none;
+  background:#fff;
+  color:#ff3c00;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.signup{
+  margin-top:15px;
+  font-size:13px;
+}
+
+.signup a{
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* Responsive */
+@media(max-width:1000px){
+  .wrapper{
+    flex-direction:column;
+    height:auto;
+  }
+  .left,.right{
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="left text-center">
+    <div class="img-box">
+        <img src="http://localhost:3000/static/media/Logo.82f7f34f75a607d81902.png" alt="" style="width: 30%;">
+    </div>
+    
+   <h1>Restaurant Partner Login</h1>
+
+<p>
+    Access your restaurant dashboard to manage orders, monitor supplies, 
+    and ensure seamless kitchen operations with real-time updates.
+</p>
+  </div>
+
+  <div class="right">
+    <div class="form-box">
+      <h2>Login</h2>
+
+      <div class="input-group">
+        <input type="email" placeholder="Email Address">
+      </div>
+
+      <div class="input-group">
+        <input type="password" placeholder="Password">
+      </div>
+
+      <button class="btn">Sign In</button>
+
+      <div class="signup">
+        Don’t have an account? <a href="#">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
